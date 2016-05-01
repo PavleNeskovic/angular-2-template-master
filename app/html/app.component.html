@@ -8,6 +8,13 @@
     <h1>Hello angular</h1>
     <courses>Loading...</courses>
     <authors>Loading...</authors>
-    <playlist>Loading...</playlist>
+    <label>Title:</label>
+    <input #titleVid>
+    <label>Url:</label>
+    <input #url>
+    <label>Description:</label>
+    <input #desc>
+    <button (click)="addVideo(titleVid.value,url.value,desc.value)">Add</button>
+    <playlist [videos]="videos">Loading...</playlist>
 </body>
 </html>

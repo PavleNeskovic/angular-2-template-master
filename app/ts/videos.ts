@@ -1,5 +1,5 @@
 
-export class Videos{
+export class Video{
     id:number;
     title:string;
     videoCode:string;
